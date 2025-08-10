@@ -1,82 +1,30 @@
 <!DOCTYPE html>
-<<html<html<html<html<html<html lang="zh">html=lang>html=lang>html=lang>html=lang>html=lang>html lang="zh " >
-< head >
-<<meta<meta<meta<meta<meta<meta charset="UTF-8">meta=charset>meta=charset>meta=charset>meta=charset>meta=charset>meta charset="UTF-8 " >
-<<meta<meta<meta<meta<meta<meta name="viewport" content="width=device-width, initial-scale=1.0">meta=name " viewport "=content>meta=name " viewport "=content>meta=name " viewport "=content>meta=name " viewport "=content>meta=name " viewport "=content>meta name = " viewport " content = " width = device-width，initial-scale=1.0 "=设备宽度，初始比例=1.0 >
-<标题>索尔维拉索尔维拉</title >
-<风格>
-正文{
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background: linear-gradient(135deg, #0d2b45, #00b4d8);
-        color: white;
-        text-align: center;
-        padding: 50px;
-    }
-标题{
-        margin-bottom: 40px;
-    }
-h1 {
-        font-size: 3em;
-        margin: 0;
-    }
-导航按钮{
-        margin: 5px;
-        padding: 10px 20px;
-        border: none;
-背景色:# 00b4d8
-颜色:白色；
-边框半径:5px
-光标:指针；
-    }
-导航按钮:悬停{
-背景色:# 0096c7
-    }
-。内容{
-字号:1.2em
-最大宽度:600像素；
-边距:自动；
-    }
-</风格 >
-</头 >
-<正文>
-<标题>
-        <氕 身份证明（identification）="标题">索尔维拉</氕><氕 我d="标题">索尔维拉</氕><氕 我d="标题">索尔维拉</氕><氕 我d="标题">索尔维拉</氕><h1 我d="title">索尔维拉</h1><h1 我d="title">索尔维拉</h1><h1 我d="title">索尔维拉</h1>
-        <p 身份证明（identification）=“字幕”>连接世界的社交平台</p><p 我d=“字幕”>连接世界的社交平台</p><p 我d=“字幕”>连接世界的社交平台</p><p 我d="subtitle">连接世界的社交平台</p><p 我d="subtitle">连接世界的社交平台</p><p 我d="subtitle">连接世界的社交平台</p><p 我d=“字幕”>连接世界的社交平台</p>
-<导航>
-            <按钮 onclick="塞特朗(zh ')">中文</按钮><按钮 onclick="塞特朗(zh ')">中文</按钮><按钮 onclick="赛隆(" zh "是什么意思)">中文</button><button onclick="setLang('zh')">中文</button><button onclick="setLang('zh')">中文</button><button onclick="setLang('zh')">中文</button>
-            <按钮 onclick="塞特朗(恩)">英语</按钮><按钮 onclick="塞特朗(恩)">英语</按钮><按钮 onykk="塞特朗(恩)">英语</按钮><按钮 onclick="塞特朗(恩)">英语</按钮><按钮 onclick="塞特朗(恩)">英语</按钮><按钮 onclick="塞特朗(恩)">英语</按钮>
-            <按钮 onclick="塞特朗(角)">葡萄牙语</按钮><按钮 onclick="塞特朗(角)">葡萄牙语</按钮><按钮 onykk="塞特朗(角)">葡萄牙语</按钮><按钮 onclick="塞特朗(角)">葡萄牙语</按钮><按钮 onclick="塞特朗(角)">葡萄牙语</按钮><按钮 onclick="塞特朗(角)">葡萄牙语</按钮>
-</航行 >
-</页眉 >
-<    <主要的 班级=“内容” 身份证明（identification）="正文"><主要的 班级=“内容” 身份证明（identification）="正文"><主要的 班级=“内容” 身份证明（identification）="正文"><主要的 班级=“内容” 身份证明（identification）="正文"><主要的 班级=“内容” 身份证明（identification）="正文"><主要的 班级=“内容” 身份证明（identification）="正文">妈我n班级 = "内容" id = "主要文本" >
-        欢迎来到索尔维拉，这是一个支持多语言的社交网站。
-</妈我n >
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>索尔维拉 SOLVERA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="title">索尔维拉</h1>
+    <p id="subtitle">连接世界的多语言社交平台</p>
+    <nav>
+        <button onclick="setLanguage('zh')">中文</button>
+        <button onclick="setLanguage('en')">English</button>
+        <button onclick="setLanguage('pt')">Português</button>
+    </nav>
+</header>
 
-<脚本>
-常量转换= {
-张:{
-标题: "索尔维拉",
-字幕: "连接世界的社交平台",
-主要: "欢迎来到索尔维拉,这是一个支持多语言的社交网站。"
-        },
-恩:{
-标题:“索尔韦拉”，
-副标题:“社交连接世界”，
-main:“欢迎来到SOLVERA，一个多语言的社交平台。”
-        },
-pt: {
-标题:“索尔韦拉”，
-副标题:“世界社会联系”，
-main:“Bem-vindo ao SOLVERA，uma plataforma social multilí ngue。”
-        }
-    };
+<main>
+    <section id="products"></section>
+</main>
 
-函数塞特朗(郎){
-document.getElementById('title ')。innerText = translations[lang]。标题；
-document . getelementbyid(' subtitle ')。innerText = translations[lang]。字幕；
-document . getelementbyid(' main text ')。innerText = translations[lang]。主要；
-    }
-</可控硅整流器(Silicon Controlled Rectifier)我元素铂的符号(可控硅整流器)我元素铂的符号 >
-</身体 >
-</超文本标记语言 >
+<footer>
+    <p>© 2025 SOLVERA</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
