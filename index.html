@@ -1,20 +1,60 @@
-<!文档类型html >
-<超文本标记语言 语言=" pt ">
-<头>
-    <自指的 字符集=“UTF八号”>
-    <自指的 名字="视窗" 内容=宽度=设备宽度，初始比例=1.0>
-    <标题>索尔维拉索尔维拉-电动车</标题>
-    <环 能量损耗率="样式表" href=" style.css ">
-</头>
-<身体>
-    <页眉>
-        <氕>索尔维拉索尔韦拉</氕>
-        <p>高性能两轮电动车 — 从中国到巴西</p>
-    </页眉>
-    <主要的 身份证明（identification）="产品列表"></主要的>
-    <页脚>
-        <p>2025 索尔维拉索尔韦拉</p>
-    </页脚>
-    <脚本 科学研究委员会=" script.js "></脚本>
-</身体>
-</超文本标记语言>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>索尔维拉 Solvera 电动车</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.jpg" alt="Solvera Logo" class="logo">
+        <nav>
+            <ul>
+                <li data-key="home">首页</li>
+                <li data-key="products">产品展示</li>
+                <li data-key="contact">联系我们</li>
+            </ul>
+            <select id="languageSwitcher">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+                <option value="pt">Português</option>
+            </select>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h1 data-key="heroTitle">智能出行，选择索尔维拉</h1>
+        <p data-key="heroSubtitle">为未来提供清洁、智能、高效的电动车解决方案</p>
+    </section>
+
+    <section id="products">
+        <h2 data-key="products">产品展示</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/bike1.jpg" alt="Bike 1">
+                <h3 data-key="bike1">索尔维拉 电动车 A1</h3>
+            </div>
+            <div class="product">
+                <img src="images/bike2.jpg" alt="Bike 2">
+                <h3 data-key="bike2">索尔维拉 电动车 B2</h3>
+            </div>
+            <div class="product">
+                <img src="images/bike3.jpg" alt="Bike 3">
+                <h3 data-key="bike3">索尔维拉 电动车 C3</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 data-key="contact">联系我们</h2>
+        <p data-key="contactInfo">电话：<span id="phone">即将公布</span> | 邮箱：<span id="email">即将公布</span></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Solvera. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
