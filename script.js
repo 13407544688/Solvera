@@ -1,40 +1,79 @@
-身体{
-    字体-家庭的: 天线, 无-衬线;
-    边缘: 0;
-    背景: #f5f9fc;
-    颜色: #333;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
 }
-页眉{
-    背景: 线性的-梯度(90（同degree）度, #007b8f, #00c896);
-    颜色: 白色;
-    文本-排列: 中心;
-    填料: 20像素;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004d26;
+    color: white;
+    padding: 10px 20px;
 }
-主要的{
-    显示: 格子;
-    格子-模板-列: 重复(汽车-合适的, 最小最大值(250px，1神父));
-    缝隙: 20像素;
-    填料: 20像素;
+
+.logo {
+    height: 50px;
 }
-.产品{
-    背景: 白色;
-    边界-半径: 10像素;
-    箱子-阴影: 0 4像素8像素rgba(0,0,0,0.1);
-    泛滥: 隐藏的;
-    文本-排列: 中心;
-    填料-底部: 10像素;
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
-.产品img{
-    最大-宽度: 100%;
-    显示: 街区;
+
+nav li {
+    cursor: pointer;
 }
-.产品氘{
-    颜色: #007b8f;
-    字体-大小: 18像素;
+
+#languageSwitcher {
+    margin-left: 20px;
 }
-页脚{
-    背景: #007b8f;
-    颜色: 白色;
-    文本-排列: 中心;
-    填料: 10像素;
+
+#hero {
+    background: url('images/logo.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#products {
+    padding: 40px 20px;
+    background: white;
+}
+
+.product-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#contact {
+    padding: 40px 20px;
+    text-align: center;
+    background: #e6ffe6;
+}
+
+footer {
+    background: #004d26;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
