@@ -1,40 +1,40 @@
-const productsData = {
-    zh: [
-        { name: "智能手表", price: "¥299", img: "https://via.placeholder.com/200", desc: "多功能智能手表，支持健康监测" },
-        { name: "无线耳机", price: "¥199", img: "https://via.placeholder.com/200", desc: "高音质无线蓝牙耳机" }
-    ],
-    en: [
-        { name: "Smart Watch", price: "$45", img: "https://via.placeholder.com/200", desc: "Multi-functional smart watch with health tracking" },
-        { name: "Wireless Earbuds", price: "$30", img: "https://via.placeholder.com/200", desc: "High-quality Bluetooth earbuds" }
-    ],
-    pt: [
-        { name: "Relógio Inteligente", price: "R$150", img: "https://via.placeholder.com/200", desc: "Relógio inteligente multifuncional com monitoramento de saúde" },
-        { name: "Fones sem fio", price: "R$100", img: "https://via.placeholder.com/200", desc: "Fones de ouvido Bluetooth de alta qualidade" }
-    ]
-};
-
-function setLanguage(lang) {
-    const translations = {
-        zh: { title: "索尔维拉", subtitle: "连接世界的多语言社交平台" },
-        en: { title: "SOLVERA", subtitle: "Connecting the world socially" },
-        pt: { title: "SOLVERA", subtitle: "Conectando o mundo socialmente" }
-    };
-
-    document.getElementById("title").innerText = translations[lang].title;
-    document.getElementById("subtitle").innerText = translations[lang].subtitle;
-
-    const productsContainer = document.getElementById("products");
-    productsContainer.innerHTML = "";
-    productsData[lang].forEach(p => {
-        productsContainer.innerHTML += `
-            <div class="product">
-                <img src="${p.img}" alt="${p.name}">
-                <h3>${p.name}</h3>
-                <p>${p.price}</p>
-                <p>${p.desc}</p>
-            </div>
-        `;
-    });
+身体{
+    字体-家庭的: 天线, 无-衬线;
+    边缘: 0;
+    背景: #f5f9fc;
+    颜色: #333;
 }
-
-setLanguage("zh");
+页眉{
+    背景: 线性的-梯度(90（同degree）度, #007b8f, #00c896);
+    颜色: 白色;
+    文本-排列: 中心;
+    填料: 20像素;
+}
+主要的{
+    显示: 格子;
+    格子-模板-列: 重复(汽车-合适的, 最小最大值(250px，1神父));
+    缝隙: 20像素;
+    填料: 20像素;
+}
+.产品{
+    背景: 白色;
+    边界-半径: 10像素;
+    箱子-阴影: 0 4像素8像素rgba(0,0,0,0.1);
+    泛滥: 隐藏的;
+    文本-排列: 中心;
+    填料-底部: 10像素;
+}
+.产品img{
+    最大-宽度: 100%;
+    显示: 街区;
+}
+.产品氘{
+    颜色: #007b8f;
+    字体-大小: 18像素;
+}
+页脚{
+    背景: #007b8f;
+    颜色: 白色;
+    文本-排列: 中心;
+    填料: 10像素;
+}
